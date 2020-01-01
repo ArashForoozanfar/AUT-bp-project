@@ -1,7 +1,24 @@
-//salon Cinema Mananger
+//Cinema Salon
 #include <stdio.h>
 #include <stddef.h>
-struct File 1
+struct Sans
 {
-    /* data */
+    int date;
+    int startTime;
+    int endTime;
+    int salonCapacity;
+    char filmName;
 };
+struct Salon
+{
+    struct Sans;
+    char sound;
+    char display; 
+};
+struct Film 
+{
+    int filmLen;
+    char content;
+    char summary;
+    char castName;
+}
