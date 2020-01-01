@@ -3,8 +3,8 @@
 #include ".vscode/File 1.txt"
 int main()
 {
-    int x = 0, y = 0;
-    printf("press 1(%d): Buy Ticket\npress 2(%d): Manage Cinema", x, y);
+    int x = 0;
+    printf("press 1(%d): Buy Ticket\npress 2(%d): Manage Cinema", x, x);
 struct Sans s;
 struct Salon Sa;
 struct Film F;
