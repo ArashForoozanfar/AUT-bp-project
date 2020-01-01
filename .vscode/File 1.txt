@@ -11,7 +11,7 @@ struct Sans
 };
 struct Salon
 {
-    struct Sans;
+    struct *Sans;
     char sound;
     char display; 
 };
