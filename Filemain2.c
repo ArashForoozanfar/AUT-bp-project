@@ -3,15 +3,15 @@
 #include ".vscode/File 1.txt"
 int main()
 {
-    int x = 0;
-    printf("press 1(%d): Buy Ticket\npress 2(%d): Manage Cinema", x, x);
+    int x = 0, y=0;
+    printf("press 1(%d): Buy Ticket\npress 2(%d): Manage Cinema", x, y);
 struct Sans s;
 struct Salon Sa;
 struct Film F;
 FILE *p;
 p = fopen("File 1.txt", "w+");
 if (x==1) {
-    printf("you want to buy ticket, please write your ticket specification: ");
+    printf("you want to buy ticket so write your ticket specification: ");
 scanf("%d", &s.date);
 scanf("%d", &s.startTime);
 scanf("%d", &s.endTime);
