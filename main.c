@@ -62,9 +62,11 @@ int main ()
     f = fopen("Film.txt", "rb");
     while (feof(f) == 0) {
         fread(&F, sizeof(struct Film), 1, f);
+        for(int i=0; i<filmNum; i++) {
         printf("%s\t", F.filmName);
         printf("%d\t", F.filmLen);
         puts("%d", F.id);
+        }
     } 
     fclose(f);
     for (int i=0; i<sansNum; i++){
@@ -73,14 +75,8 @@ int main ()
         puts ("%d", S.sans[i].date);
         puts ("%d", S.sans[i].salonCapacity);
       }
-
     }
 
     
-
-
-
-
-
 
 }
