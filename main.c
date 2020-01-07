@@ -25,7 +25,7 @@ struct Film
 };
 int main ()
 {
-    int filmNum, sansNum;
+    int filmNum, sansNum, TicketNumber, x = 0;
     char n;
     struct Sans sa[20]; 
     struct Salon S;
@@ -75,8 +75,14 @@ int main ()
         puts ("%d", S.sans[i].date);
         puts ("%d", S.sans[i].salonCapacity);
       }
-    }
+      scanf("%d", &TicketNumber);
+      scanf("%d", &F.id);
+      for (int i=0; i<sansNum; i++) {
+       x = (S.sans[i].salonCapacity - TicketNumber);
+      }
+      puts("%d", x);
 
+    }
     
 
 }
